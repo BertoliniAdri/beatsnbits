@@ -1,10 +1,11 @@
 //class_pointeur.js
 
-//Le pointeur se place sur un cercle et bouge autour
+//Le Pointer se place sur un cercle et bouge autour
+//C'est lui qui indique la position dans le tempo représenté par le cercle
 
-class Pointeur
+class Pointer
 {
-//    définition d'un Pointeur
+//    définition d'un Pointer
     constructor(class_name, parent_id)
     {
         this.parent = document.getElementById(parent_id);//parent du bouton dans le HTML
@@ -21,27 +22,19 @@ class Pointeur
 //detruit la div dans le html
     destroy()
     {
-//        let rip = document.getElementsByClassName(this.class_name);
-//        if (rip.length > 0)
-//        {
-//            for (let i = rip.length - 1; i > -1; i--) {
-//                this.parent.removeChild(rip[i]);
-//            }
-//        }
         this.parent.removeChild(this.out);
         this.is_draw = false;
     }
 
-//permet de créé un pointeur (le dessiner)
-    draw(t)
+//permet de créé un Pointer (le dessiner)
+    draw(time)
     {
-        console.log('draw pointeur');
         if (this.is_draw)
         {
             destroy();
         }
         //On calcule l'angle en degrés
-        let angle = 360 / (duration / t) - 90;//duration est déclaré dans sequenceur.js
+        let angle = 360 / (duration / time) - 90;//duration est déclaré dans sequenceur.js
         //On calcule l'angle en radiants
         angle = angle * Math.PI / 180.0;
 
@@ -71,10 +64,10 @@ class Pointeur
         this.is_draw = true;
     }
 
-    move(t)
+    move(time)
     {
         //On calcule l'angle en degrés
-        let angle = 360 / (duration / t) - 90;//duration est déclaré dans sequenceur.js
+        let angle = 360 / (duration / time) - 90;//duration est déclaré dans sequenceur.js
         //On calcule l'angle en radiants
         angle = angle * Math.PI / 180.0;
 
@@ -97,8 +90,6 @@ class Pointeur
     refresh_position()
     {
         //on se base sur la taille de l'image du cercle
-//        this.centreX = this.img.clientWidth / 2 - this.out.clientWidth/2;
-//        this.centreY = this.img.clientHeight / 2 - this.out.clientHeight/2;
         this.centreX = this.img.clientWidth / 2 - 10;
         this.centreY = this.img.clientHeight / 2 - 14;
         this.rayon = this.img.clientHeight / 2 + 10;

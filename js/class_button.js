@@ -2,7 +2,7 @@
 //
 
 //faire une div avec une id pour placer le bouton
-//Ex: <div id="ma_div" id="parent"></div>
+//Ex: <div id="parent"></div>
 //appeler le bouton
 //Ex:
 //var c = new Button("X", "parent", key_sounds[0], true);

@@ -5,8 +5,7 @@
 //A FAIRE:
 
 //en stick to beat -> jouer le son quand on presse la touche
-//stocker un truc dans une variable skip_sound
-//si le son n'existe pas déjà
+//stocker un truc dans une variable skip_sound si le son n'existe pas déjà
 //réparer bug affichage sync
 //Adapter les pastiles avec taille écran (responsive)
 //Incrémenter le bpm de 1 et adpater la durée (duration) en fonction
@@ -175,7 +174,7 @@ window.addEventListener('load', function () {
 //    draw_cercle(mesures);
 
 //on crée le pointeur qui gravite autour du cercle
-    pointeur = new Pointeur('pointeur', 'cercle');
+    pointeur = new Pointer('pointeur', 'cercle');
     //on dessine le pointeur dans le code html
     pointeur.draw(time);
 

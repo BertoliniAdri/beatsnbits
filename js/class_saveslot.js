@@ -131,11 +131,7 @@ class SaveSlot
 //pour détruire des éléments de la page (parent, enfant à détruire)
     destroy(parent, rip)
     {
-//        this.out.style.transition = "0.8s";
-//        this.out.style.opacity = '0.0';
-//        this.timer = window.setTimeout(() => {
         parent.removeChild(rip);
-//        }, 8);
     }
 
     convert_time(duration)
@@ -211,28 +207,8 @@ class SaveSlot
             this.name_p = document.createElement("p");
             this.top.appendChild(this.name_p);
             this.name_p.innerHTML = this.sequence_name;
-            //this.name_p.className = "save_name_p";
         }
-//            this.rename_button = document.createElement("div");
-//            this.top.appendChild(this.rename_button);
-//            this.rename_button.className = 'save_rename_button';
-//            this.rename_button.addEventListener("mousedown", () =>
-//            {
-//
-//                this.editing_name = !this.editing_name;
-//                if (this.editing_name)
-//                {
-//                    this.name_p.style.display = 'none';
-//                    this.name_field.style.display = 'initial';
-//                } else
-//                {
-//                    this.sequence_name = this.name_field.value;
-//                    this.name_p.innerHTML = this.sequence_name;
-//                    this.name_p.style.display = 'initial';
-//                    this.name_field.style.display = 'none';
-//                }
-//            });
-//        }
+
 
 
         this.bottom = document.createElement("div");
@@ -254,15 +230,14 @@ class SaveSlot
 //si le champ de texte est actif
         this.name_field.addEventListener("focus", () =>
         {
-//                console.log('active');
             disable_sound_keys = true;
 
 //A chaque modification du champ de texte
             this.name_field.addEventListener("input", () =>
             {
-//                   //on vérifie le texte
+                //on vérifie le texte
                 var regex = new RegExp("^[a-zA-Z0-9 _.-àáâãäåçèéêëìíîïðòóôõöùúûüýÿ]*$");
-                //si texte ok
+                //si le texte est valide
                 if (regex.test(this.name_field.value) && this.name_field.value != '')
                 {
                     this.bottom.innerHTML = "";
@@ -278,10 +253,9 @@ class SaveSlot
                     }
 
                 }
-                //si le texte n'est pas ok
+                //si le texte n'est pas valide
                 else
                 {
-//                        console.log('text not ok');
                     if (this.name_ok)
                     {
                         this.name_ok = false;
@@ -329,7 +303,7 @@ class SaveSlot
         this.save_button.style.transition = "0";
         this.ennable_save();
         this.save_button.style.transition = "0.4s";
-        //On place un écouteur pour les les clicks de souris
+        //On place un évenement pour les clicks de souris
         this.save_button.addEventListener("mousedown", () =>
         {
             //si pret pour sauvegarde
@@ -369,7 +343,6 @@ class SaveSlot
             this.load_button.addEventListener("mousedown", () =>
             {
                 load_sequence(this.sequence_id);
-//            console.log('seq id = '+this.sequence_id);
             });
 
 //le bouton pour effacer une sauvegarde

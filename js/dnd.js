@@ -85,9 +85,6 @@ window.addEventListener('load', function () {
             e.stopPropagation(); // empêche le navigateur de nous rediriger.
         }
 
-//        console.log("dropped ! " + drag_key + ' -> ' + this.textContent);
-        //console.log(get_button_from_letter(this.textContent, boutons_creation).sound_file +' => '+ get_button_from_letter(drag_key, soundFiles_buttons).sound_file);
-//            get_button_from_letter(this.textContent, boutons_creation).sound_file = get_button_from_letter(drag_key, soundFiles_buttons).sound_file;
         key_sounds[this.textContent] = get_button_from_letter(drag_key, soundFiles_buttons).sound_file;
 
         return false;
@@ -103,7 +100,7 @@ window.addEventListener('load', function () {
 
 function refresh_dnd_listOfButtons() {
     id_ = 'librarySamples_1';//id du parent
-    //
+    
     //on récupère tous les boutons draggable dans le parent
     buts_ = document.querySelectorAll('#' + id_ + ' .draggable');
     dragSrcEl_ = null;

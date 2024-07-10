@@ -32,7 +32,7 @@ if (!isset($_SESSION)) {
                     <div class="main_content">
                         <div class="mysounds">
                             <h3>BEATZ N BITZ</h3>
-                            Projet blablablalala
+                            Projet done in one week
                         </div>
                         <div class="mysounds">
                             <h3>Zouheir</h3>

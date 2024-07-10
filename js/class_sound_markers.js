@@ -15,33 +15,9 @@ class Sound_Marker
         
         this.out;
 
-//        this.bouton_on = false;//le bouton n'est pas actif
         this.timer;//pour pouvoir faire un clearTimeout
 
         this.img = document.getElementById('img_cercle');//balise <img> du cercle dans le html
-//        this.centreX = this.img.clientWidth / 2 - 6;
-//        this.centreY = this.img.clientHeight / 2 - 6;
-//        this.rayon = this.img.clientHeight / 2 + 10;
-//        //on prend key_sounds pour définir la taille du rayon en fonction de l'index de la lettre
-////        console.log('key_sounds.length: ' + Object.keys(key_sounds).length);
-//        for (let i = 1, len = Object.keys(key_sounds).length; i < len + 1; i++)//key_sound est dans sequenceur.js
-//        {
-//            if (Object.keys(key_sounds)[i-1] === this.key)
-//            {
-//                this.rayon += 14 * i;
-//                console.log('rayon: '+this.rayon);
-//            }
-//        }
-//        var l=0;
-//        for (letter in key_sounds)
-//        {
-//            l++;
-//            if (letter === this.key)
-//            {
-//                this.rayon += 14 * l;
-////                console.log(this.rayon);
-//            }
-//        }
         this.active;
         this.is_draw = false;//true si dans le code html
 
@@ -129,37 +105,16 @@ class Sound_Marker
 
         this.out.style.left = this.posX + "px";
         this.out.style.top = this.posY + "px";
-//
-//        this.out.style.webkitTransform = 'rotate(' + angle + 'rad)';
-//        this.out.style.mozTransform = 'rotate(' + angle + 'rad)';
-//        this.out.style.msTransform = 'rotate(' + angle + 'rad)';
-//        this.out.style.oTransform = 'rotate(' + angle + 'rad)';
-//        this.out.style.transform = 'rotate(' + angle + 'rad)';
+
     }
 
     //met à jour le centre et le rayon
     refresh_position()
     {
-        //on se base sur la taille de l'image du cercle
-//        this.centreX = this.img.clientWidth / 2 - this.out.clientWidth/2;
-//        this.centreY = this.img.clientHeight / 2 - this.out.clientHeight/2;
-//        this.centreX = this.img.clientWidth / 2 - 6;
-//        this.centreY = this.img.clientHeight / 2 - 6;
-//        this.rayon = this.img.clientHeight / 2 + 10;
-//        
-//        for (let i = 1, len = Object.keys(key_sounds).length; i < len + 1; i++)//key_sound est dans sequenceur.js
-//        {
-//            if (Object.keys(key_sounds)[i-1] === this.key)
-//            {
-//                this.rayon += 14 * i;
-//                console.log('rayon: '+this.rayon);
-//            }
-//        }
         this.centreX = this.img.clientWidth / 2 - 6;
         this.centreY = this.img.clientHeight / 2 - 6;
         this.rayon = this.img.clientHeight / 2 + 10;
         //on prend key_sounds pour définir la taille du rayon en fonction de l'index de la lettre
-//        console.log('key_sounds.length: ' + Object.keys(key_sounds).length);
         for (let i = 1, len = Object.keys(key_sounds).length; i < len + 1; i++)//key_sound est dans sequenceur.js
         {
             if (Object.keys(key_sounds)[i-1] === this.key)
