@@ -1,0 +1,136 @@
+/*remplacer: .items par: .beats */
+/*remplacer: .bidule par: .pointeur */
+/*virer: .libraryCategories li &
+        .libraryCategories a &
+        .libraryCategories a:hover &
+        .libraryCategories a:active*/
+
+/*nouveau*/
+.beats{
+    position: absolute;
+    border: 0px;
+    width: 20px;
+    height: 4px;
+    background-color: #37FDFC;
+    border-radius: 30px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+/*nouveau*/
+.mesures{
+    position: absolute;
+    border: 0px;
+    width: 10px;
+    height: 2px;
+    background-color:rgba(55, 253, 252, 0.9);
+    border-radius: 30px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+.pointeur{
+    position: absolute;
+    /*    border: 0px;
+        width: 12px;
+        height: 12px;*/
+    /*background-color: #006666;*/
+    /*border-radius: 50%;*/
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent; 
+
+    border-right:20px solid #37FDFC;
+}
+
+.categorie {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+/*    color: #eee;
+    margin: 0 auto;*/
+    padding: 2px;
+    color: #FF4F4F;
+    transition: 0.4s;
+    font-size: 1em;
+    
+}
+
+
+.categorie:hover {
+    color: #37FDFC;
+    border-bottom: 1px #37FDFC solid;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.categorie_actif {
+    color: #eee;
+}
+
+.sound_marker{
+    position: absolute;
+    border: 0px;
+    width: 12px;
+    height: 12px;
+    background-color: #37FDFC;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    -ms-transform-origin: 50% 50%; /* IE 9 */
+    font-size: 12px;
+    text-align: center;
+    color: #37FDFC;
+}
+/*.dropper {
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.dropper h1{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.dropper.over {
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8) inset;
+    border: white 5px dashed !important;
+}
+
+.draggable {
+    cursor: move;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+     Required to make elements draggable in old WebKit 
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.draggable.moving {
+  opacity: 0.25;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.launchpad  {
+    padding: 8px 0 0 10px;
+    font-size: 40px;
+}*/
+

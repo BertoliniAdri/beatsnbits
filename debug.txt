@@ -1,0 +1,5 @@
+user_iden: demo
+user_pass: Demo2017
+user_pass sha1: 13ddf4b9149e7c3f20586798047fc1fdaedee77d
+user_pass htmlentities: 13ddf4b9149e7c3f20586798047fc1fdaedee77d
+user_iden strtolower: 13ddf4b9149e7c3f20586798047fc1fdaedee77d

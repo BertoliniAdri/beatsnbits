@@ -1,0 +1,162 @@
+/* ------------------------------------------------------------------------- */
+/* BEATZ N BITZ */
+/* PROJET REALISE POUR BGE */
+/* V1 2017 */
+/* ------------------------------------------------------------------------- */
+
+/*
+-- COULEURS --
+BLEU DARK: #16125a
+BLEU NEON: #37FDFC
+BLEU PLUS CLAIR: #191567;
+ROUGE ORANGE: #FF4F4F
+GRIS CLAIR: #EEE
+NOIR: #1b212c
+
+*/
+
+/* ------------------------------------------------------------------------- */
+
+
+/*zone principales--------------------*/
+#zone_gauche, #zone_droite {
+
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+#zone_gauche{
+  z-index: 3060;
+  /*border: solid 1px white;*/
+  width: 30%;
+  height: 100%;
+  margin-left: 7%;
+}
+
+#zone_droite {
+
+  z-index: 3070;
+  /*border: solid 1px white;*/
+  width: 30%;
+  height: 100%;
+  margin-left: 65%;
+}
+/*fin zone principales------------------*/
+
+
+
+/*zones internes---------------------------*/
+
+.zone {
+
+  /*border: solid 1px white;*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border-radius: 50%;*/
+}
+
+#zone1 {
+
+  z-index: 3000;
+  /*margin-top: 3%;
+  margin-left: 3%;*/
+  /*border: solid 1px white;*/
+}
+
+#zone2 {
+  z-index: 3001;
+}
+
+#zone3 {
+  z-index: 3002;
+
+}
+
+#zone4 {
+  z-index: 3003;
+
+}
+
+#zone5 {
+  z-index: 3004;
+  /*margin-bottom: 3%;
+  margin-left: 3%;*/
+  /*border: solid 1px yellow;*/
+}
+
+#zone6 {
+  z-index: 3006;
+  /*margin-top: 3%;
+  margin-left: 77%;*/
+  /*border: solid 1px red;*/
+
+}
+
+#zone7 {
+  z-index: 3007;
+  /*margin-top: 3%;
+  margin-left: 77%;*/
+  /*border: solid 1px red;*/
+
+}
+
+#zone8 {
+  z-index: 3008;
+  /*margin-top: 3%;
+  margin-left: 77%;*/
+  /*border: solid 1px red;*/
+
+}
+
+#zone9 {
+  z-index: 3009;
+  /*margin-top: 3%;
+  margin-left: 77%;*/
+  /*border: solid 1px red;*/
+
+}
+
+#zone10 {
+  z-index: 3010;
+  /*margin-bottom: 3%;
+  margin-left: 77%;*/
+  /*border: solid 1px pink;*/
+
+}
+
+/*fin zones internes-------------*/
+
+
+
+
+/*formes----------------------*/
+
+.forme {
+  visibility: hidden;
+  width: 20%;
+  transition: all linear 0.2s;
+
+}
+
+#forme_triangle1 {
+  align-items: center;
+  z-index: 4000;
+}
+
+#forme_losange {
+  align-items: center;
+  margin: 0;
+  color:white;
+}
+
+
+/*fin formes--------------------*/

@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mai 2017, 09:23:44
+    Author     : BGE
+*/
+#navcontainer
+{
+    font-family: Arial,Sans-Serif;
+    margin: 10px auto 20px;
+    width: 100%;
+    
+    /*background-color: #F04937;*/
+    /*border-bottom: 1px solid #FFB85F;*/
+}
+
+#navlist
+{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+    height: 80px;
+}
+
+#navlist li
+{
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    display: inline;
+}
+
+#navlist li a
+{
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #D17162;
+    font-size: 1.5em;
+    padding: 0 2px;
+    /*border-top: .5em solid #FFB85F;*/
+}
+
+#navlist li a:hover,#navlist a#current
+{
+    color: #F07A69;
+    border-top: none;
+    font-size: 1.5em;
+}
+
+#navlist li a:hover,#navlist a.current
+{
+    color: #F07A69;
+    border-top: none;
+    font-size: 1.5em;
+}
+
+#navlist a#current { color: #F07A69; }
+#navlist a.current { color: #F07A69; }

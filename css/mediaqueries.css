@@ -1,0 +1,122 @@
+/* ------------------------------------------------------------------------- */
+/* BEATZ N BITZ */
+/* PROJET REALISE POUR BGE */
+/* V1 2017 */
+/* ------------------------------------------------------------------------- */
+
+/* DEBUT : A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/*
+Adapter cercle
+
+
+*/
+/* FIN : A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------------------------------------------------------- */
+
+/* DEBUT : INFERIEUR à 1400px ----------------------------------------------- */
+@media screen and (max-width: 1400px) {
+    #launchpad {
+        width: 100%;
+    }
+
+    #settings {
+        width: 80%;
+    }
+}
+/* FIN : INFERIEUR à 1400px ------------------------------------------------- */
+
+/* DEBUT : INFERIEUR à 1000px ----------------------------------------------- */
+@media screen and (max-width: 900px) {
+    #cercle_logo img {
+        width: 20%; 
+    }
+
+    #cercle {
+        width: 35%
+    }
+}
+/* FIN : INFERIEUR à 1000px ------------------------------------------------- */
+
+
+/* DEBUT : INFERIEUR à 760px ------------------------------------------------ */
+@media screen and (max-width: 760px) {
+
+    #mainHeader,
+    #fullscreenOpen_id,
+    #shares,
+    footer
+    {
+        display: none;
+    }
+
+    #mobileHeader {
+        display:block;
+    }
+
+    #icons {
+        margin-top: 10vh;
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+
+    .icons_right {
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+
+    #cercle_logo img {
+        width: 30%; 
+    }
+
+    #cercle {
+        width: 45%
+    }
+
+    #settings {
+        width: 80%;
+    }
+
+    .container_connexion {
+        width: 90%;
+    }
+
+    .main_container {
+        min-height: 95vh;
+    }
+
+    .launchpad {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    #launchpad {
+        width: 100%;
+    }
+
+    .middlepage {
+        min-height: 95vh;
+    }
+
+
+    #user_controls {
+        min-height: 40vh;
+    }
+
+    #launchpad {
+        min-height: 31vh;
+    }
+
+    .container_connexion {
+        margin-top: 10vh;
+    }
+
+    .sounds-list {
+        min-width: 100%;
+    }
+}
+/* FIN : INFERIEUR à 760px -------------------------------------------------- */

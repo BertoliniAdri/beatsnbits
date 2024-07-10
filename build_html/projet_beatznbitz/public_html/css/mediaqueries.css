@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------------------- */
+/* BEATZ N BITZ */
+/* PROJET REALISE POUR BGE */
+/* V1 2017 */
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 760px) {
+
+    #mainHeader {
+        display:none;
+
+    }
+
+    #mobileHeader {
+        display:block;
+    }
+
+    #library {
+        display: none;
+
+    }
+    #options {
+        display:none;
+    }
+
+    #share {
+        display: none;
+    }
+
+    #cercle_logo img {
+        width: 30%; 
+    }
+
+    #cercle {
+        width: 45%
+
+    }
+    
+    .container_connexion {
+        width: 90%;
+    }
+
+
+}

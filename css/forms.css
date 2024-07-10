@@ -1,0 +1,355 @@
+/* ------------------------------------------------------------------------- */
+/* BEATZ N BITZ */
+/* PROJET REALISE POUR BGE */
+/* V1 2017 */
+/* ------------------------------------------------------------------------- */
+
+/* DEBUT : A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/*
+Renommer les classes
+CHANGER NOM DANS from_check
+*/
+/* FIN : A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/*
+-- COULEURS --
+BLEU DARK: #16125a
+BLEU NEON: #37FDFC
+ROUGE: #FF4F4F
+GRIS CLAIR: #EEE
+NOIR: #1b212c
+
+*/
+
+/* ========================================================================= */
+/* LES FORMS */
+/* ========================================================================= */
+
+
+/* DEBUT : FORMULAIRE CONNEXION / INSCRIPTION ------------------------------- */
+form {
+    padding: 5px;
+}
+/*
+.profil_submit {
+    margin: 25px;
+}*/
+#testForm {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    /*    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;*/
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    z-index: 2000;
+    float: right;
+    top: 10vh;
+    right: 20px;
+    background-color: #16125A;
+    border: 1px #FF4F4F solid;
+    z-index: 99999;
+}
+
+.connexionContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#testForm input[type="text"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 400px;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#testForm input[type="text"]:focus{
+    outline: none;
+}
+
+#testForm input[type="email"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 100%;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#testForm input[type="email"]:focus{
+    outline: none;
+}
+
+#testForm input[type="password"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 400px;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#testForm input[type="password"]:focus{
+    outline: none;
+}
+
+#testForm input[type="button"]{
+    margin: 10px;
+    padding: 10px;
+    border: 1px #FF4F4F solid;
+    border-radius: 25px;
+    background-color: #16125A;
+    color: #FF4F4F;
+    font-size: 1em;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#testForm input[type="button"]:hover{
+    border: 1px #37FDFC solid;
+    background-color: #16125A;
+    color: #37FDFC;
+    transition: linear 0.2s;
+
+}
+
+#testForm input[type="button"]:active{
+    color: white;
+    transition: linear 0.2s;
+
+}
+
+#testForm input[type="submit"]{
+    margin: 10px;
+    padding: 5px;
+    border: 1px #FF4F4F solid;
+    border-radius: 25px;
+    background-color: #16125A;
+    color: #FF4F4F;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#testForm input[type="submit"]:hover{
+    border: 1px #37FDFC solid;
+    background-color: #16125A;
+    color: #37FDFC;
+    transition: linear 0.2s;
+
+}
+
+#testForm input[type="submit"]:active{
+    color: white;
+    transition: linear 0.2s;
+
+}
+
+#testForm input[type="text"].error_input,
+#testForm input[type="password"].error_input,
+#testForm input[type="email"].error_input {
+    font-size: 1.2em;
+    color: #FF4F4F;
+    /*    line-height: 3;*/
+    width: 100%;
+    /*    border-radius: 10px;*/
+    /*    border: 1px #FF4F4F solid;*/
+    background-color: rgba(255, 79, 79, 0.1);
+    transition: 0.4s;
+}
+/* FIN : FORMULAIRE CONNEXION / INSCRIPTION --------------------------------- */
+
+
+
+
+#loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    z-index: 2000;
+    background-color: #16125a;
+}
+
+#loginForm input[type="text"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 400px;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="text"]:focus{
+    outline: none;
+}
+
+#loginForm input[type="email"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 100%;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="email"]:focus{
+    outline: none;
+}
+
+#loginForm input[type="password"]{
+    display: block;
+    color: #37FDFC;
+    font-size: 2em;
+    width: 400px;
+    background-color: #16125A;
+    border: 1px #16125A solid;
+    border-bottom: 1px #FF4F4F solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="password"]:focus{
+    outline: none;
+}
+
+#loginForm input[type="button"]{
+    margin: 10px;
+    padding: 5px;
+    border: 1px #FF4F4F solid;
+    border-radius: 25px;
+    background-color: #16125A;
+    color: #FF4F4F;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#loginForm input[type="button"]:hover{
+    border: 1px #37FDFC solid;
+    background-color: #16125A;
+    color: #37FDFC;
+    transition: linear 0.2s;
+
+}
+
+#loginForm input[type="button"]:active{
+    color: white;
+    transition: linear 0.2s;
+
+}
+
+#loginForm input[type="submit"]{
+    margin: 10px;
+    padding: 5px;
+    border: 1px #FF4F4F solid;
+    border-radius: 25px;
+    background-color: #16125A;
+    color: #FF4F4F;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#loginForm input[type="submit"]:hover{
+    border: 1px #37FDFC solid;
+    background-color: #16125A;
+    color: #37FDFC;
+    transition: linear 0.2s;
+
+}
+
+#loginForm input[type="submit"]:active{
+    color: white;
+    transition: linear 0.2s;
+
+}
+
+#loginForm input[type="text"].error_input,
+#loginForm input[type="password"].error_input,
+#loginForm input[type="email"].error_input {
+    font-size: 1.2em;
+    color: #FF4F4F;
+    /*    line-height: 3;*/
+    width: 100%;
+    /*    border-radius: 10px;*/
+    /*    border: 1px #FF4F4F solid;*/
+    background-color: rgba(255, 79, 79, 0.1);
+    transition: 0.4s;
+}
+/* FIN : FORMULAIRE CONNEXION / INSCRIPTION --------------------------------- */
+
+
+
+/* DEBUT : FORMULAIRE RECHERCHER -------------------------------------------- */
+#searchForm input[type="text"]{
+    background-color: #16125A;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: -100% 5px;
+    border: 1px #191567 solid;
+    padding: 2px;
+    color: #37FDFC;
+    transition: 0.4s;
+    font-size: 1em;
+}
+
+#searchForm input[type="text"]:focus{
+    background-color: #16125A;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 100% 5px;
+    outline: none;
+}
+/* FIN : FORMULAIRE RECHERCHER -------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* PLACEHOLDER */
+/* ------------------------------------------------------------------------- */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 0.9em;
+    font-family: 'Abel';
+    color: #eee;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Abel';
+    color: #eee;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Abel';
+    color: #eee;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-family: 'Abel';
+    color: #eee;
+
+}
